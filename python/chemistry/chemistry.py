@@ -1,3 +1,5 @@
+from formula import parse_formula
+      
 def make_periodic_table():
     periodic_table_dict = {
         "Ac": ("Actinium", 227),
@@ -97,6 +99,13 @@ def make_periodic_table():
     }
     return periodic_table_dict
 
+def compute_molar_mass(symbol_quantity_list, periodic_table):
+    molar_mass=0.0
+    for symbol, quantity in symbol_quantity_list:
+        if symbol in periodic_table:
+            atomic_mass = periodic_table[symbol][1]
+            molar_mass += atomic_mass * quantity
+    return molar_mass
 
 def main():
     table = make_periodic_table()
