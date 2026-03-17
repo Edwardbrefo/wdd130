@@ -61,7 +61,7 @@ aside {
 }
 
 aside img {
-    width: var(--aside-width);
+    width: 200px;
     height: auto;
 }
 
