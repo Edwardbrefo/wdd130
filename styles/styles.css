@@ -25,6 +25,11 @@ nav a {
     padding: var(--nav-link-padding);
 }
 
+/* Main */
+main {
+    max-width: 800px;
+}
+
 /* Headings */
 h1 {
     color: var(--main-blue);
