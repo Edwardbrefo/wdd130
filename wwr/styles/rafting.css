@@ -77,7 +77,7 @@ h1 {
     width: 125px;
 }
 
-header {
+.hero header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
