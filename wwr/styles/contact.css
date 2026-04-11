@@ -4,7 +4,6 @@ company-info h2 {
     text-align: center;
     text-decoration: underline;
 }
-   
 
 form {
     margin: 20px auto;
@@ -13,6 +12,9 @@ form {
     border-radius: 8px;
     width: 400px;
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 label {
@@ -41,6 +43,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--text-font);
+    transition: background-color 0s ease;
 }
 
 button:hover {
@@ -70,6 +73,7 @@ form {
     gap: 30px;
     padding: 20px;
 }
+
 .team-section figure {
     text-align: center;
 }
@@ -83,8 +87,7 @@ form {
 }
 
 .team-section figcaption {
-  margin-top: 10px;
-  font-style: italic;
-  color: #555;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
 }
-
